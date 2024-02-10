@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App > h1 {
+  font-size: 2.5em;
+  padding: 5px;
+  margin: 5px;
+}
+
+.search {
+  min-height: 10vh;
+  font-size: 1.2em;
+  max-width: 70%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.search input {
+  font-size: 1.1em;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.search input:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.userCard {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCard img {
+  width: 200px;
+  height: 200px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.userCard img:hover {
+  width: 300px;
+  height: 300px;
+}
+
+.userCard a {
+  color: black;
+  text-decoration: none;
+}
+
+.userCard a:hover {
+  color: cyan;
+  text-decoration: underline;
+}
+
+.user {
+  margin: 10px;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .userCard {
+    min-width: fit-content;
+  }
+}
